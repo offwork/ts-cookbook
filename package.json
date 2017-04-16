@@ -1,0 +1,44 @@
+{
+  "name": "ts-cookbook",
+  "version": "1.0.0",
+  "description": "learn typescript",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offwork/ts-cookbook.git"
+  },
+  "keywords": [
+    "typescript",
+    "karma",
+    "gulp",
+    "browserify"
+  ],
+  "author": "offwork",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/offwork/ts-cookbook/issues"
+  },
+  "homepage": "https://github.com/offwork/ts-cookbook#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-karma": "0.0.5",
+    "gulp-tslint": "^8.0.0",
+    "gulp-typescript": "^3.1.6",
+    "karma": "^1.6.0",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sinon": "^1.0.5",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.41",
+    "jquery": "^3.2.1"
+  }
+}

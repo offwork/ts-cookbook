@@ -1,0 +1,29 @@
+{
+  "name": "ts-cookbook",
+  "description": "learn typescript",
+  "main": "index.html",
+  "authors": [
+    "offwork"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "karma",
+    "gulp",
+    "browserify"
+  ],
+  "homepage": "https://github.com/offwork/ts-cookbook",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.5.2"
+  }
+}
