@@ -1,7 +1,3 @@
-///<reference path="./typings/index.d.ts" />
-
-import View = require('./view');
-
-var footerView = new View("./source/hbs/layout/footer.hbs", "#footer", null);
-
+import View = require("./view");
+const footerView = new View("./source/hbs/layout/footer.hbs", "#footer", null);
 export = footerView;

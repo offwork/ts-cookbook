@@ -1,35 +1,34 @@
-///<reference path="./typings/index.d.ts" />
-
-import Handlebars   = require('handlebars');
+import Handlebars   = require("handlebars");
 import Promise      = require("bluebird");
-import Model        = require('./model');
+import Model        = require("./model");
 
+/**
+ * View
+ */
 class View {
-  private _container : string;
-  private _templateUrl : string;
-  private _model : Model;
+  private container: string;
+  private templateUrl: string;
+  private model: Model;
 
-  constructor(templateUrl : string, container : string, model : Model){
-    this._container = container;
-    this._templateUrl = templateUrl;
-    this._model = model;
+  constructor(templateUrl: string, container: string, model: Model) {
+    this.container = container;
+    this.templateUrl = templateUrl;
+    this.model = model;
   }
+
   public render() {
-    // if(this._model === null) {
-    //  throw new Error("not implemented!");
-    // }
-    // else {
     $.ajax({
-      url : this._templateUrl,
-      success : (text) => {
-        var template : any = Handlebars.compile(text);
-        var html = template({});
-        $(this._container).html(html);
+      error: (error) => {
+        // error
       },
-      error : function(error) {
-        console.log(error);
-      }
+      success: (text) => {
+        const template: any = Handlebars.compile(text);
+        const html = template({});
+        $(this.container).html(html);
+      },
+      url: this.templateUrl,
     });
-    // }
   }
 }
+
+export = View;

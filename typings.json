@@ -1,7 +1,11 @@
 {
   "name": "ts-cookbook",
-  "dependencies": {},
+  "dependencies": {
+    "bluebird": "registry:npm/bluebird#3.5.0+20170314181206",
+    "lodash": "registry:npm/lodash#4.0.0+20161015015725"
+  },
   "globalDependencies": {
+    "handlebars": "registry:dt/handlebars#4.0.5+20170310072326",
     "jquery": "registry:dt/jquery#1.10.0+20170310222111"
   }
 }

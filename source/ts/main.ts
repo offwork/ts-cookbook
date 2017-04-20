@@ -1,8 +1,6 @@
-///<reference path="./typings/index.d.ts" />
-
-import { headerView } from "./header_view";
-import { footerView } from "./footer_view";
-import { loadingView } from "./loading_view";
+import headerView = require("./header_view");
+import footerView = require("./footer_view");
+import loadingView = require("./loading_view");
 
 headerView.render();
 headerView.render();
