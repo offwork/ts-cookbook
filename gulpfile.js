@@ -9,9 +9,9 @@ var gulp        = require('gulp'),
     Server      = require('karma').Server
     browserSync = require('browser-sync').create();
 
-var browseried  = transfotm(function(filename) {
-    var b = browserify({ entries: filename, debug: true });
-    return b.bundle;
+
+var browserified  = transfotm(function(filename) {
+    return browserify({entries: filename, debug: true}).bundle();
 });
 
 gulp.task('default', function(cb) {
@@ -60,16 +60,16 @@ gulp.task('tsc-tests', function() {
 
 gulp.task('bundle-js', function() {
     return gulp.src('./temp/source/js/main.js')
-                .pipe(browseried)
-                .pipe(sourcemaps.init({ loadMaps: true }))
+                .pipe(browserified)
+                .pipe(sourcemaps.init({loadMaps: true}))
                 .pipe(uglify())
-                .pipe(sourcemaps.write('./'))
+                .pipe(sourcemaps.write())
                 .pipe(gulp.dest('./dist/source/js/'));
 });
 
 gulp.task('bundle-test', function() {
     return gulp.src('./temp/test/**/**.test.js')
-                .pipe(browseried)
+                .pipe(browserified)
                 .pipe(gulp.dest('./dist/test/'));
 });
 
