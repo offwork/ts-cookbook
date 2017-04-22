@@ -24,7 +24,10 @@
   "homepage": "https://github.com/offwork/ts-cookbook#readme",
   "devDependencies": {
     "@types/bluebird": "^3.5.2",
+    "@types/chai": "^3.5.1",
     "@types/handlebars": "^4.0.32",
+    "@types/mocha": "^2.2.41",
+    "@types/sinon": "^2.1.2",
     "browser-sync": "^2.18.8",
     "chai": "^3.5.0",
     "gulp": "^3.9.1",

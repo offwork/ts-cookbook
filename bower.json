@@ -21,7 +21,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "materialize": "^0.98.2",
+    "animate.css": "^3.5.2"
   },
   "devDependencies": {
     "jasmine-core": "jasmine#^2.5.2"
